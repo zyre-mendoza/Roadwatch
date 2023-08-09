@@ -1,0 +1,37 @@
+:root {
+    --main-color: #2D2C2C;
+    --accent-color: #113F67;
+    --container-bg: #4F4F4F;
+  }
+
+
+  body{
+    background-color: white;
+  }
+
+  .color-text{
+    color: white;
+  }
+  
+.card{
+    border: #113F67 solid 1px;
+}
+
+.card-body{
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+
+}
+
+/* navbar */
+.navbar{
+    background-color: var(--main-color);
+    border-bottom: #92FFA4 1px solid;
+}
+
+  /* login styles */
+
+#login-container{
+    background-color: var(--container-bg);
+    color: white;
+}
