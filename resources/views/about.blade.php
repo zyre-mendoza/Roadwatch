@@ -1,5 +1,5 @@
 
-@extends('layouts.layout')
+@extends('layouts.tailwind-layout')
 
 
 @section('content')

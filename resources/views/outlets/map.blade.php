@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.bootstrap-layout')
 
 @section('content')
 <h1 style="font-size: 40px; text-decoration: underline; margin-bottom: 30px;" >Reports</h1>

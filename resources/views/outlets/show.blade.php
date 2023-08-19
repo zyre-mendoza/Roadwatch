@@ -1,16 +1,17 @@
-@extends('layouts.layout')
+@extends('layouts.bootstrap-layout')
 
 @section('title', __('outlet.detail'))
 
 @section('content')
+<br><br><br><br><br>
 <div class="row justify-content-center">
     <div class="col-md-6">
         <div class="card">
-            <div class="card-header">Reports Details</div>
+            <div class="card-header">Report Details</div>
             <div class="card-body">
                 <table class="table table-sm">
                     <tbody>
-                        <tr><td>Report Name/td><td>{{ $outlet->name }}</td></tr>
+                        <tr><td>Report Name<td>{{ $outlet->name }}</td></tr>
                         <tr><td>report Address</td><td>{{ $outlet->address }}</td></tr>
                         <tr><td>Details</td><td>{{ $outlet->details }}</td></tr>
                         <tr><td>Photo</td><td><img src="{{ asset($outlet->photo) }}" width= '50' height='50' class="img img-responsive" /></td>
@@ -22,7 +23,7 @@
             </div>
             <div class="card-footer">
                 @can('update', $outlet)
-                    <a href="{{ route('outlets.edit', $outlet) }}" id="edit-outlet-{{ $outlet->id }}" class="btn btn-warning">Edit School</a>
+                    <a href="{{ route('outlets.edit', $outlet) }}" id="edit-outlet-{{ $outlet->id }}" class="btn btn-warning">Edit Report</a>
                 @endcan
                 @if(auth()->check())
                     <a href="{{ route('outlets.index') }}" class="btn btn-link">Back to Reports</a>

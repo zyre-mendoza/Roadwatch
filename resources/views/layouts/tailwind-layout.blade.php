@@ -33,7 +33,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
     @yield('styles')
@@ -43,7 +42,7 @@
 <div id="app">
         
 
-@include('layouts.partials.coloredNavbar')
+@include('layouts.partials.navbar')
     <br>
       <br>
 

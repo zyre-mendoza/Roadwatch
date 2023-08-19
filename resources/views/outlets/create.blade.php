@@ -1,12 +1,13 @@
-@extends('layouts.layout')
+@extends('layouts.bootstrap-layout')
 
 @section('title', __('outlet.create'))
 
 @section('content')
+<br><br><br><br><br>
 <div class="row justify-content-center">
     <div class="col-md-6">
-        <div class="card">
-            <div class="card-header">{{ __('outlet.create') }}</div>
+        <div style="border:none" class="card">
+            <div class="card-header"><h1 style="color: #113F67; font-size: 40px; font-weight: 900;">Report a Road Damage</h1></div>
             <form method="POST" action="{{ route('outlets.store') }}" enctype="multipart/form-data" accept-charset="UTF-8">
                 {{ csrf_field() }}
                 <div class="card-body">
@@ -55,10 +56,12 @@
                     </div>
 </div>
 
-           <div class="form-group">
-       <input style="margin-left: 20px;" class="form-control" name="photo" type="file" id="photo">
+           <div style="padding: 0 1.5em;" class="form-group">
+           <label for="photo" class="control-label">Photo</label>
+             <input  class="form-control" name="photo" type="file" id="photo">
                         {!! $errors->first('photo', '<span class="invalid-feedback" role="alert">:message</span>') !!}
                     </div>
+
                     <div style="padding: 0 1.5em;" class="form-group">
                     <label for="severity" class="control-label">Severity</label>
                     <select class="form-select form-control{{ $errors->has('severity') ? ' is-invalid' : '' }}" name="severity" value="{{ old('severity') }}" required aria-label="Default select example">
@@ -75,7 +78,9 @@
                 </div>
             </form>
         </div>
+
         <div class="col-md-6">
+        <br>    <br>    <br>    <br> <br>
         <div class="card">
             <div class="card-header">{{ trans('outlet.location') }}</div>
 

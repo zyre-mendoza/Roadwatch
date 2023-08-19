@@ -4,10 +4,16 @@
     --container-bg: #4F4F4F;
   }
 
+  *{
+    padding: 0;
+    margin: 0;
+  }
 
   body{
-    background-color: white;
+    background-color: white;  
   }
+
+
 
   .color-text{
     color: white;
@@ -17,6 +23,19 @@
     border: #113F67 solid 1px;
 }
 
+.login_title{
+    font-size: 40px;
+    padding-top: 1em;
+    font-weight: 900;
+    color: #113F67;
+}
+
+.card-header{
+  background: white;
+  border: none;
+}
+
+
 .card-body{
     border-bottom-left-radius: .25rem;
     border-bottom-right-radius: .25rem;
@@ -24,10 +43,26 @@
 }
 
 /* navbar */
-.navbar{
-    background-color: var(--main-color);
-    border-bottom: #92FFA4 1px solid;
+
+
+
+.navbar {
+    width: 100%;
+    z-index: 100000;
+    color: black;
+    position: fixed;
+    padding: 30px 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
 }
+
+.BgColour {
+    color: black;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
 
   /* login styles */
 

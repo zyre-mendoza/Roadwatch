@@ -1,8 +1,9 @@
-@extends('layouts.layout')
+@extends('layouts.bootstrap-layout')
 
 @section('title', __('outlet.edit'))
 
 @section('content')
+<br><br><br><br><br>
 <div class="row justify-content-center">
     <div class="col-md-6">
         @if (request('action') == 'delete' && $outlet)
@@ -36,7 +37,7 @@
         @endcan
         @else
         <div class="card">
-            <div class="card-header">{{ __('outlet.edit') }}</div>
+            <div class="card-header"><h1 style="color: #113F67; font-size: 40px; font-weight: 900;">Edit Report</h1></div>
             <form method="POST" enctype="multipart/form-data" action="{{ route('outlets.update', $outlet) }}" accept-charset="UTF-8">
                 {{ csrf_field() }} {{ method_field('patch') }}
                 <div class="card-body">
